@@ -239,7 +239,7 @@ else()
   target_compile_options(
     triton-core
     PRIVATE
-      -Wall -Wextra -Wno-unused-parameter -Wno-deprecated-declarations -Werror
+      -Wall -Wextra -Wno-unused-parameter -Wno-deprecated-declarations -Wno-maybe-uninitialized -Werror
   )
   set_target_properties(
     triton-core
