@@ -139,7 +139,7 @@ else()
   target_compile_options(
     triton-core-serverstub
     PRIVATE
-      -Wall -Wextra -Wno-unused-parameter -Werror
+      -Wall -Wextra -Wno-unused-parameter -Wno-maybe-uninitialized -Wno-range-loop-construct -Werror
   )
 endif()
 
